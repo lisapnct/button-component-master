@@ -2,8 +2,6 @@
   width: 81px;
   height: 36px;
   border-radius: 6px;
-  font-family: "Noto Sans", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -36,4 +34,14 @@
 .disabled {
   color: #9e9e9e;
   cursor: default;
+}
+
+.sm {
+  width: 73px;
+  height: 32px;
+}
+
+.lg {
+  width: 93px;
+  height: 42px;
 }
