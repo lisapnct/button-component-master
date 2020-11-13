@@ -8,6 +8,7 @@ function App() {
       <Button variant="outline" />
       <Button variant="text" />
       <Button disableShadow />
+      <Button disabled />
     </div>
   );
 }

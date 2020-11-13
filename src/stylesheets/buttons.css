@@ -9,6 +9,7 @@
   line-height: 20px;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 
 .default {
@@ -30,4 +31,9 @@
 
 .no-shadow {
   box-shadow: none;
+}
+
+.disabled {
+  color: #9e9e9e;
+  cursor: default;
 }
