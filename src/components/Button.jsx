@@ -2,13 +2,12 @@ import React from "react";
 import "../stylesheets/buttons.css";
 
 const Button = (props) => {
-  return (
-    <button className={props.variant 
-    ? `${props.variant} button` 
-    : "button default"}>
-      Default
-    </button>
-  );
+  const variant = props.variant ? props.variant : "default";
+  const shadow = props.disableShadow ? "no-shadow" : "";
+  
+  const buttonStyle = `button ${variant} ${shadow} `;
+  
+  return <button className={buttonStyle}>Default</button>;
 };
 
 export default Button;
