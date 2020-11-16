@@ -5,7 +5,18 @@ function App() {
   return (
     <div className="App">
       <h1>Reusable button component</h1>
-      <p>created by Lisa Poncet</p>
+      <h4>
+        solution for{" "}
+        <a
+          href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY"
+          target="_blank"
+          rel="noreferrer"
+        >
+          this challenge{" "}
+        </a>{" "}
+        from devchallenges.io
+      </h4>
+      <small>created by Lisa Poncet</small>
       <div className="buttons">
         <div className="button-container">
           <div>

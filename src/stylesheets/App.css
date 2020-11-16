@@ -2,7 +2,7 @@
 
 .App {
   font-family: "Noto Sans", sans-serif;
-  margin: 30px;
+  margin: 50px;
   text-align: center;
 }
 
@@ -28,4 +28,9 @@
 
 small {
   text-align: center;
+}
+
+a {
+  /* text-decoration: none; */
+  color: inherit;
 }
