@@ -2,13 +2,19 @@ import React from "react";
 import "../stylesheets/buttons.css";
 
 const Button = (props) => {
-  const variant = props.variant ? props.variant : "default";
+  const variant =
+    props.variant && props.color
+      ? `${props.variant} ${props.color}`
+      : props.variant
+      ? props.variant
+      : props.color
+      ? props.color
+      : "default";
   const shadow = props.disableShadow ? "no-shadow" : "";
   const disabled = props.disabled ? "disabled" : "";
   const size = props.size ? props.size : "";
-  const color = props.color ? props.color : "";
 
-  const buttonStyle = `button ${variant} ${shadow} ${disabled} ${color} ${size}`;
+  const buttonStyle = `button ${variant} ${shadow} ${disabled} ${size}`;
 
   return (
     <button className={buttonStyle}>
@@ -17,7 +23,7 @@ const Button = (props) => {
           {props.start_icon}
         </i>
       )}
-      {props.content ? props.content : "default"}
+      {props.content ? props.content : "Default"}
       {props.end_icon && (
         <i className="material-icons" id="end_icon">
           {props.end_icon}
