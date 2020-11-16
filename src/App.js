@@ -45,30 +45,6 @@ function App() {
         </div>
         <div className="button-container">
           <div>
-            <Button size="sm" color="primary" />
-          </div>
-          <p>{"<Button size='sm' />"}</p>
-        </div>
-        <div className="button-container">
-          <div>
-            <Button color="primary" />
-          </div>
-          <p>{"<Button />"}</p>
-        </div>
-        <div className="button-container">
-          <div>
-            <Button size="lg" color="primary" />
-          </div>
-          <p>{"<Button size='lg' />"}</p>
-        </div>
-        <div className="button-container">
-          <div>
-            <Button />
-          </div>
-          <p>{"<Button />"}</p>
-        </div>
-        <div className="button-container">
-          <div>
             <Button color="primary" content="primary" />
           </div>
           <p>{"<Button color='primary' />"}</p>
@@ -87,12 +63,6 @@ function App() {
         </div>
         <div className="button-container">
           <div>
-            <Button start_icon="favorite" color="primary" />
-          </div>
-          <p>{"<Button start_icon='favorite' />"}</p>
-        </div>
-        <div className="button-container">
-          <div>
             <Button start_icon="launch" color="primary" />
           </div>
           <p>{"<Button end_icon='grade' />"}</p>
@@ -102,6 +72,24 @@ function App() {
             <Button end_icon="arrow_circle_down" color="primary" />
           </div>
           <p>{"<Button end_icon='arrow_circle_down' />"}</p>
+        </div>
+        <div className="button-container">
+          <div>
+            <Button start_icon="star" color="primary" />
+          </div>
+          <p>{"<Button start_icon='star' />"}</p>
+        </div>
+        <div className="button-container">
+          <div>
+            <Button size="lg" color="primary" />
+          </div>
+          <p>{"<Button size='lg' />"}</p>
+        </div>
+        <div className="button-container">
+          <div>
+            <Button size="sm" color="primary" />
+          </div>
+          <p>{"<Button size='sm' />"}</p>
         </div>
       </div>
     </div>
