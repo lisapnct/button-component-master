@@ -16,7 +16,12 @@ function App() {
         </a>{" "}
         from devchallenges.io
       </h4>
-      <small>created by Lisa Poncet</small>
+      <small>
+        created by{" "}
+        <a href="https://github.com/lisapnct" target="_blank" rel="noreferrer">
+          Lisa Poncet
+        </a>
+      </small>
       <div className="buttons">
         <div className="button-container">
           <div>
