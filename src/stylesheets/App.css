@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 .App {
-  margin: 20px;
   font-family: "Noto Sans", sans-serif;
-  height: 100vh;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.App *:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.App h2 {
+  margin: 30px;
   text-align: center;
 }
 
 .buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-container {
+  margin: 50px 5px;
+  min-width: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-container p {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+small {
+  text-align: center;
 }
