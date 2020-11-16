@@ -1,13 +1,23 @@
 .button {
-  width: 81px;
-  height: 36px;
   border-radius: 6px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  padding: 8px 13px;
   text-align: center;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#start_icon {
+  margin-right: 4px;
+}
+
+#end_icon {
+  margin-left: 4px;
 }
 
 .default {
@@ -37,11 +47,19 @@
 }
 
 .sm {
-  width: 73px;
-  height: 32px;
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.sm .material-icons {
+  font-size: 18px;
 }
 
 .lg {
-  width: 93px;
-  height: 42px;
+  font-size: 1.25rem;
+  padding: 13px 16px;
+}
+
+.lg .material-icons {
+  font-size: 1.8rem;
 }

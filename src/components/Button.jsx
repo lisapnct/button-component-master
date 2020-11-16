@@ -6,10 +6,24 @@ const Button = (props) => {
   const shadow = props.disableShadow ? "no-shadow" : "";
   const disabled = props.disabled ? "disabled" : "";
   const size = props.size ? props.size : "";
-  
+
   const buttonStyle = `button ${variant} ${shadow} ${disabled} ${size}`;
 
-  return <button className={buttonStyle}>Default</button>;
+  return (
+    <button className={buttonStyle}>
+      {props.start_icon && (
+        <i className="material-icons" id="start_icon">
+          {props.start_icon}
+        </i>
+      )}
+      Button
+      {props.end_icon && (
+        <i className="material-icons" id="end_icon">
+          {props.end_icon}
+        </i>
+      )}
+    </button>
+  );
 };
 
 export default Button;
