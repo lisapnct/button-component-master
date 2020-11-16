@@ -37,6 +37,21 @@
   background: none;
 }
 
+.primary {
+  background-color: #2962ff;
+  color: white;
+}
+
+.secondary {
+  background-color: #455a64;
+  color: white;
+}
+
+.danger {
+  background-color: #d32f2f;
+  color: white;
+}
+
 .no-shadow {
   box-shadow: none;
 }

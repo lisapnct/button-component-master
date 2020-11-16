@@ -6,8 +6,9 @@ const Button = (props) => {
   const shadow = props.disableShadow ? "no-shadow" : "";
   const disabled = props.disabled ? "disabled" : "";
   const size = props.size ? props.size : "";
+  const color = props.color ? props.color : "";
 
-  const buttonStyle = `button ${variant} ${shadow} ${disabled} ${size}`;
+  const buttonStyle = `button ${variant} ${shadow} ${disabled} ${color} ${size}`;
 
   return (
     <button className={buttonStyle}>
@@ -16,7 +17,7 @@ const Button = (props) => {
           {props.start_icon}
         </i>
       )}
-      Button
+      {props.content ? props.content : "default"}
       {props.end_icon && (
         <i className="material-icons" id="end_icon">
           {props.end_icon}
